@@ -1,0 +1,33 @@
+{
+    "name": "proto-less",
+    "homepage": "https://github.com/khrome/proto-less",
+    "version": "0.0.1-alpha",
+    "main": "main.js",
+    "description": "A macro library for less, used by protolus",
+    "keywords": [
+        "less",
+        "css",
+        "macros"
+    ],
+    "author": "Abbey Hawk Sparrow <@khrome> (http://patternweaver.com)",
+    "contributors": [],
+    "bugs": {
+        "url": "https://github.com/khrome/proto-less/issues"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:khrome/proto-less.git"
+    },
+    "dependencies": {
+        "less": "*"
+    },
+    "resources" : [],
+    "devDependencies": {
+    },
+    "optionalDependencies": {
+    },
+    "engines": {
+        "node": "*"
+    }
+}

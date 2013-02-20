@@ -1,0 +1,61 @@
+// This file can ONLY contain variables!! Do not add styles here!
+
+@contentWidth : 500px;
+@fontSmall : 12px;
+
+.transition(@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+
+.transform(@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+	-webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+.roundedUpperRightCorner(@pixels:5px){
+    -moz-border-radius-topright: @pixels;
+    border-top-right-radius: @pixels;
+}
+.roundedUpperLeftCorner(@pixels:5px){
+    -moz-border-radius-topleft: @pixels;
+    border-top-left-radius: @pixels;
+}
+
+.roundedTop(@pixels:5px){
+    .roundedUpperRightCorner(@pixels);
+    .roundedUpperLeftCorner(@pixels);
+}
+.roundedBottom(@pixels:5px){
+    .roundedLowerRightCorner(@pixels);
+    .roundedLowerLeftCorner(@pixels);
+}
+
+.roundedLowerRightCorner(@pixels:5px){
+    -moz-border-radius-bottomright: @pixels;
+    border-bottom-right-radius: @pixels;
+}
+.roundedLowerLeftCorner(@pixels:5px){
+    -moz-border-radius-bottomleft: @pixels;
+    border-bottom-left-radius: @pixels;
+}
+
+.roundedRight(@pixels:5px){
+    .roundedUpperRightCorner(@pixels);
+    .roundedLowerRightCorner(@pixels);
+}
+.roundedLeft(@pixels:5px){
+    .roundedUpperLeftCorner(@pixels);
+    .roundedLowerLeftCorner(@pixels);
+}
+
+.rounded(@pixels){
+    .roundedTop(@pixels);
+    .roundedBottom(@pixels);
+}
